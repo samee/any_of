@@ -1,12 +1,14 @@
 # Class `any_of`
 
-This is a _constrained_ version of the C++ class `std::any`. It provides a
+This is a _constrained_ version of the C++ class
+[`std::any`](https://en.cppreference.com/w/cpp/utility/any). It provides a
 single template class, `any_of<YourBaseClass>`, that can store any (copyable)
 object of a class derived from `YourBaseClass`. Constraining it by a base class
 means you can access base class members without needing to downcast to some
 specific subclass, or without even knowing what the specific subclass is. This
-is in contrast to `std::any` where you can't do anything useful to the object
-without knowing the underlying type.
+is in contrast to [`std::any`](https://en.cppreference.com/w/cpp/utility/any)
+where you can't do anything useful to the object without knowing the underlying
+type.
 
 ## Example code
 
